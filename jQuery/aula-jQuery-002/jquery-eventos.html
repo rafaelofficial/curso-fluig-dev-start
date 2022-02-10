@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trabalhando com jQuery - Parte 2</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+			$("p").on({
+				mouseenter: function() {
+					$(this).css("background-color", "lightgray");
+				},
+				mouseleave: function() {
+					$(this).css("background-color", "lightblue");
+				},
+				click: function() {
+					$(this).css("background-color", "yellow");
+				}
+			});
+		});
+
+	</script>
+
+</head>
+<body>
+	<p>
+		$(this).hide(); - hides the current element... <br />
+		$("p").hide(); - hides all p elements... <br />
+		$(".test").hide(); - hides all elements with class="test"...<br />
+		$(#test).hide(); - hides the elements with id="test"...
+	</p>
+</body>
+</html>

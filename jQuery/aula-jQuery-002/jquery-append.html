@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trabalhando com jQuery - Parte 2</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+			$("#btn-p").click(function() {
+				$("p").append("<strong>Texto incluído no parágrafo...</strong>");
+			});
+
+			$("#btn-li").click(function() {
+				$("ol").append("<li><strong>Item incluído na lista...</strong></li>")
+			});
+		});
+
+	</script>
+
+</head>
+<body>
+	<p>Primeiro parágrafo...</p>
+	<p>Segundo parágrafo...</p>
+
+	<ol>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+	</ol>
+
+	<button id="btn-p">Incuir Textos</button>
+	<button id="btn-li">Incuir Itens</button>
+</body>
+</html>
